@@ -47,7 +47,7 @@ p{
 
 .avatar {
     width: 500px;
-    margin-right: 250px;
+    margin-right: 15%;
     border-radius: 50%;   
     border: 7px solid #440892;  
     box-shadow: 0 0 20px rgb(134, 45, 250), 0 0 60px rgb(136, 0, 247), 0 0 90px rgb(134, 45, 250);
