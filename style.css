@@ -5,7 +5,6 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: 'Poppins', sans-serif;
 }
 body{
     background: linear-gradient(45deg, rgb(0, 0, 0), rgb(17, 1, 48), rgb(0, 0, 0));
@@ -21,7 +20,7 @@ a {
 }
 .logo{
     font-size: 2rem;
-    color: #b74b4b;
+    color: #862dfa;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -38,18 +37,21 @@ header{
     left: 0;
     width: 100%;
     padding: 15px;
-    background-color: transparent;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba(98, 0, 255, 0.05);
     filter: drop-shadow(10px);
     display: flex;
+    font-family: "ADLaM Display", system-ui;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.39);
 }
 
 nav a{
-
+    
     font-size: 1.5rem;
     color: white;
     margin-left: 4rem;
@@ -59,16 +61,17 @@ nav a{
 }
 
 nav a:hover,nav a.active{
-    color: #b74b4b;
-    border-bottom: 3px solid #b74b4b;
+    color: #862dfa;
 }
-
+nav a.active{
+    font-weight: 700;
+}
 .cursor-dot {
     z-index: 99999;
     position: absolute;
     width: 12px;
     height: 12px;
-    background-color: red;
+    background-color: #862dfa;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -80,7 +83,7 @@ nav a:hover,nav a.active{
             0 0 40px #00ffff;
 
 }
- .cursor-dot.zoom {
+.cursor-dot.zoom {
       width: 24px;
       height: 24px;
       background-color: rgba(64, 64, 65,0.5);
