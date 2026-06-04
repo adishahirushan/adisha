@@ -42,11 +42,11 @@ p {
 
 .home-img {
     width: 100%;
-    height: calc(100vh - 100);
+    height: calc(100vh - 420px);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 220px;
+    margin-top: 250px;
     background-color: #6f00ff28;
     border-top: 1px solid #6f00ff65;
     border-bottom: 1px solid #6f00ff65;
