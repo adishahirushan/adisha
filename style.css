@@ -25,32 +25,40 @@ body {
 a {
     cursor: none;
 }
-h1{
+
+h1 {
     color: #ffffff;
     font-family: "Audiowide", sans-serif;
 
 }
-p{
+
+p {
     color: white;
     width: 500px;
     text-align: justify;
-    
+    line-height: 25px;
+
 }
+
 .home-img {
     width: 100%;
-    height: calc(100vh-100px); 
+    height: 500px;
     display: flex;
-    justify-content: center;  
-    align-items: center;      
-    margin-top: 250px; 
-    
+    justify-content: center;
+    align-items: center;
+    margin-top: 220px;
+    background-color: #6f00ff28;
+    border-top: 1px solid #6f00ff65;
+    border-bottom: 1px solid #6f00ff65;
+
+
 }
 
 .avatar {
     width: 500px;
     margin-right: 15%;
-    border-radius: 50%;   
-    border: 7px solid #440892;  
+    border-radius: 50%;
+    border: 7px solid #440892;
     box-shadow: 0 0 20px rgb(134, 45, 250), 0 0 60px rgb(136, 0, 247), 0 0 90px rgb(134, 45, 250);
 
 }
@@ -159,12 +167,7 @@ nav a.active {
     position: absolute;
     inset: -3px;
     border-radius: inherit;
-    background: linear-gradient(45deg,
-            #ff0000,
-            #00ff00,
-            #0000ff,
-            #ff00ff,
-            #ff0000);
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #ff0000);
     background-size: 400%;
     z-index: -1;
     filter: blur(10px);
@@ -190,15 +193,23 @@ nav a.active {
     opacity: 1;
     visibility: visible;
 }
-#typing{
+
+#typing {
     color: #862dfa;
     border-right: 3px solid #862dfa;
     padding-right: 5px;
     animation: blink 0.7s infinite;
 }
 
-@keyframes blink{
-    50%{
+.name {
+    font-weight: bold;
+    background: linear-gradient(60deg, #2dfadf, #b9fc8c, #e5fa2d, #ef8cfc, #862dfa);
+    -webkit-background-clip: text; /* makes gradient apply to text */
+    -webkit-text-fill-color: transparent; /* hides solid color */  
+}
+
+@keyframes blink {
+    50% {
         border-color: transparent;
     }
 }
