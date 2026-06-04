@@ -50,3 +50,26 @@ document.querySelectorAll("input, textarea").forEach(el => {
       cursorDot.classList.add('text');
     }
   });
+
+
+const menuBtn = document.getElementById("menuBtn");
+const navbar = document.getElementById("navbar");
+const overlay = document.getElementById("overlay");
+
+menuBtn.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+    overlay.classList.toggle("active");
+});
+
+overlay.addEventListener("click", () => {
+    navbar.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+menuBtn.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+    overlay.classList.toggle("active");
+
+    menuBtn.textContent =
+        navbar.classList.contains("active") ? "✕" : "☰";
+});
