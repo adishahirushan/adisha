@@ -73,3 +73,54 @@ menuBtn.addEventListener("click", () => {
     menuBtn.textContent =
         navbar.classList.contains("active") ? "✕" : "☰";
 });
+
+const words = [
+    "Web Developer",
+    "3D Animator",
+    "3D Sculptor",
+    "Video Editor",
+    "VFX artist",
+    "Vedio Editer",
+    "ICT & Maths Educator",
+    "Graphic Designer",
+    "Software Developer"
+];
+
+const typingElement = document.getElementById("typing");
+
+let wordIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function typeEffect(){
+
+    const currentWord = words[wordIndex];
+
+    if(!deleting){
+        typingElement.textContent =
+            currentWord.substring(0, charIndex + 1);
+
+        charIndex++;
+
+        if(charIndex === currentWord.length){
+            deleting = true;
+            setTimeout(typeEffect, 1500);
+            return;
+        }
+    }
+    else{
+        typingElement.textContent =
+            currentWord.substring(0, charIndex - 1);
+
+        charIndex--;
+
+        if(charIndex === 0){
+            deleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+        }
+    }
+
+    setTimeout(typeEffect, deleting ? 70 : 120);
+}
+
+typeEffect();
