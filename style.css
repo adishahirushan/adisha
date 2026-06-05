@@ -234,3 +234,82 @@ nav a.active {
         background-position: 400% 0;
     }
 }
+
+
+
+/*loading effect*/
+#loader{
+    position: fixed;
+    inset: 0;
+    background: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    overflow: hidden;
+}
+
+.loader-content{
+    text-align: center;
+}
+
+.loader-name{
+    font-size: clamp(2rem,6vw,5rem);
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 8px;
+    color: white;
+    margin-bottom: 40px;
+    animation: glow 2s infinite alternate;
+}
+
+.progress-container{
+    max-width: min(850px,80vw);
+    height: 4px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50px;
+    overflow: hidden;
+    margin: auto;
+    display: block;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        #b74b4b,
+        #8f5cff,
+        #00d4ff
+    );
+    border-radius: 50px;
+}
+
+#loading-percent{
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:
+            0 0 10px #b74b4b,
+            0 0 20px #b74b4b;
+    }
+    to{
+        text-shadow:
+            0 0 20px #8f5cff,
+            0 0 40px #8f5cff,
+            0 0 60px #8f5cff;
+    }
+}
+
+.loader-hide{
+    opacity: 0;
+    transform: scale(1.1);
+    filter: blur(20px);
+    transition: all 1s ease;
+}

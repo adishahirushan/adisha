@@ -1,5 +1,5 @@
 
-  const cursorDot = document.querySelector('.cursor-dot');
+const cursorDot = document.querySelector('.cursor-dot');
 
   document.addEventListener('mousemove', (e) => {
     // Move custom cursor
@@ -56,6 +56,40 @@ const words = [
     "Graphic Designer",
     "Software Developer"
 ];
+
+/* for loading effect */
+const loader = document.getElementById("loader");
+const progressBar = document.querySelector(".progress-bar");
+const percentText = document.getElementById("loading-percent");
+
+let progress = 0;
+
+const loading = setInterval(() => {
+
+    progress++;
+
+    progressBar.style.width = progress + "%";
+    percentText.innerText = progress + "%";
+
+    if(progress >= 100){
+
+        clearInterval(loading);
+
+        setTimeout(() => {
+
+            loader.classList.add("loader-hide");
+
+            setTimeout(() => {
+                loader.style.display = "none";
+            },1000);
+
+        },300);
+
+    }
+
+},20);
+
+/*end of loading effect */
 
 const typingElement = document.getElementById("typing");
 
