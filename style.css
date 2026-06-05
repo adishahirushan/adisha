@@ -5,6 +5,7 @@
     text-decoration: none;
     border: none;
     outline: none;
+    cursor: none;
 }
 
 html {
@@ -14,7 +15,7 @@ html {
 body {
     background: linear-gradient(45deg,
             rgb(0, 0, 0),
-            rgb(17, 1, 48),
+            rgb(48, 1, 1),
             rgb(0, 0, 0));
     cursor: none;
     width: 100%;
@@ -36,19 +37,19 @@ p {
     width: 500px;
     text-align: justify;
     line-height: 25px;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 .home-img {
     width: 100%;
-    height: calc(100vh - 420px);
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 250px;
-    background-color: #6f00ff28;
-    border-top: 1px solid #6f00ff65;
-    border-bottom: 1px solid #6f00ff65;
+    background-color: #5a1111;
+    border-top: 1px solid #ff000065;
+    border-bottom: 1px solid #ff000065;
 
 
 }
@@ -57,18 +58,19 @@ p {
     width: 500px;
     margin-right: 15%;
     border-radius: 50%;
-    border: 7px solid #440892;
-    box-shadow: 0 0 20px rgb(134, 45, 250), 0 0 60px rgb(136, 0, 247), 0 0 90px rgb(134, 45, 250);
+    border: 7px solid #920808;
+    box-shadow: 0 0 20px rgb(250, 45, 45), 0 0 60px rgb(247, 0, 0), 0 0 90px rgb(250, 103, 45);
 
 }
 
 .btn_contact{
     padding: 10px  15px;
     background-color: transparent;
-    color:#9852f5;
-    border: 1px solid #a970f5;
+    color:#f79797;
+    border: 1px solid #fa9e9e;
     border-radius: 20px;
     font-size: larger;
+    margin-right: 50px;
    
 }
 
@@ -87,14 +89,14 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    border-bottom: 1px solid #862dfa;
+    border-bottom: 1px solid #fa2d2d;
     font-family: "Audiowide", sans-serif;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
     font-size: 2rem;
-    color: #862dfa;
+    color: #fa2d2d;
     font-weight: 800;
     transition: 0.5s ease;
 }
@@ -113,7 +115,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: #862dfa;
+    color: #fa2d2d;
 }
 
 nav a.active {
@@ -126,7 +128,6 @@ nav a.active {
     display: none;
     font-size: 2rem;
     color: white;
-    cursor: pointer;
     z-index: 1002;
 }
 
@@ -138,7 +139,7 @@ nav a.active {
     left: 0;
     width: 12px;
     height: 12px;
-    background: #862dfa;
+    background: #fa2d2d;
     border: 2px solid #00ffff;
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -204,17 +205,18 @@ nav a.active {
 }
 
 #typing {
-    color: #862dfa;
-    border-right: 3px solid #862dfa;
+    color: #ff0000; 
+    border-right: 3px solid #fa2d2d;
     padding-right: 5px;
     animation: blink 0.7s infinite;
 }
 
 .name {
     font-weight: bold;
-    background: linear-gradient(60deg, #2dfadf, #b9fc8c, #e5fa2d, #ef8cfc, #862dfa);
+    background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
     -webkit-background-clip: text; /* makes gradient apply to text */
     -webkit-text-fill-color: transparent; /* hides solid color */  
+    
 }
 
 @keyframes blink {

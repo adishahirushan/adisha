@@ -5,10 +5,6 @@
         cursor: auto;
     }
 
-    .cursor-dot {
-        display: none;
-    }
-
     .menu-btn {
         display: block;
     }
@@ -57,5 +53,129 @@
         background: rgba(134, 45, 250, 0.15);
         color: #a86cff;
         transform: translateX(8px);
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .avatar {
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .home-content h1 {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+
+    p {
+        width: 420px;
+        font-size: 0.95rem;
+        line-height: 1.8;
+        margin: 0px;
+    }
+
+    .btn_contact {
+        display: inline-block;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 1000px) {
+
+   
+    .avatar {
+        width: 250px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+
+
+
+    .home-content h1 {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+
+    p {
+        width: 420px;
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .btn_contact {
+        display: inline-block;
+        margin: 10px 5px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .home-img {
+        flex-direction: column;
+        height: auto;
+        margin-top: 120px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 300px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+
+    p {
+        width: 100%;
+        font-size: 0.95rem;
+        text-align: justify;
+        line-height: 1.8;
+
+    }
+
+    .btn_contact {
+        display: inline-block;
+        margin: 10px 5px;
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+
+    .avatar {
+        width: 200px;
+    }
+
+    .home-content h1 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    .btn_contact {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
     }
 }

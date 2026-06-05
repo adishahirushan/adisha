@@ -1,32 +1,3 @@
-const cursor = document.querySelector(".cursor-dot");
-
-// Follow mouse 
-document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-});
-
-// Text elements
-document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, span").forEach(el => {
-    el.addEventListener("mouseenter", () => {
-        cursor.classList.add("text-hover");
-    });
-
-    el.addEventListener("mouseleave", () => {
-        cursor.classList.remove("text-hover");
-    });
-});
-
-// Inputs & textareas
-document.querySelectorAll("input, textarea").forEach(el => {
-    el.addEventListener("mouseenter", () => {
-        cursor.classList.add("input-hover");
-    });
-
-    el.addEventListener("mouseleave", () => {
-        cursor.classList.remove("input-hover");
-    });
-});
 
   const cursorDot = document.querySelector('.cursor-dot');
 
@@ -41,7 +12,7 @@ document.querySelectorAll("input, textarea").forEach(el => {
     cursorDot.classList.remove('zoom', 'text');
 
     if (
-      el.matches('a, button, [role="button"]')
+      el.matches('a,p, button,.menu-btn, [role="button"]')
     ) {
       cursorDot.classList.add('zoom');
     } else if (
