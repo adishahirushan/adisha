@@ -50,8 +50,6 @@ p {
     background-color: #5a1111;
     border-top: 1px solid #ff000065;
     border-bottom: 1px solid #ff000065;
-
-
 }
 
 .avatar {
@@ -61,6 +59,12 @@ p {
     border: 7px solid #920808;
     box-shadow: 0 0 20px rgb(250, 45, 45), 0 0 60px rgb(247, 0, 0), 0 0 90px rgb(250, 103, 45);
 
+}
+.avatar_image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
 }
 
 .btn_contact{
