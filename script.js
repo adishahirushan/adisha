@@ -129,3 +129,21 @@ function typeEffect(){
 }
 
 typeEffect();
+
+function showMobileNav() {
+    const nav = document.getElementById("mobile_nav");
+    nav.classList.toggle("active");
+}
+
+// Close menu when screen becomes desktop size
+window.addEventListener("resize", () => {
+    const nav = document.getElementById("mobile_nav");
+
+    if (window.innerWidth >= 1400) {
+        nav.classList.remove("active");
+    }
+});
+
+function showMobileNavHide() {
+    mobile_nav.classList.remove("active");
+}

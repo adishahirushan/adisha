@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div class="cursor-dot"></div> //custom cursor
     <div id="loader">
     <div class="loader-content">
         <h1 class="loader-name">ADISHA HIRUSHAN</h1>
@@ -22,12 +23,12 @@
         </div>
 
         <span id="loading-percent">0%</span>
+        </div>
     </div>
-</div>
     <div class="menu-overlay" id="overlay"></div>
 
     <header>
-
+        
         <a href="#" class="logo">Adisha</a>
 
         <nav id="navbar">
@@ -38,12 +39,25 @@
             <a href="#">Experience</a>
             <a href="#">Contact</a>
         </nav>
-
-        <div class="menu-btn" id="menuBtn">
+    
+        <div class="menu-btn" id="menuBtn" onclick="showMobileNav()">
             ☰
         </div>
-
     </header>
+    <!-- mobile nav-->
+    <center>
+        <div id="mobile_nav">
+
+            <a href="#" class="active">Home</a><br>
+            <a href="#" onclick="showMobileNavHide()">Services</a><br>
+            <a href="#" onclick="showMobileNavHide()">Skills</a><br>
+            <a href="#" onclick="showMobileNavHide()">Education</a><br>
+            <a href="#" onclick="showMobileNavHide()">Experience</a><br>
+            <a href="#" onclick="showMobileNavHide()">Contact</a><br>
+        </div>
+    </center>
+    <!-- mobile nav end-->
+    
     <section class="home">
         <div class="home-img">
             <div class="avatar">

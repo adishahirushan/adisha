@@ -1,9 +1,46 @@
+#mobile_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #3d0606;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.4s ease;
+}
 
-@media (max-width:1400px) {
+/* When menu is opened */
+#mobile_nav.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
 
-    body {
-        cursor: auto;
+#mobile_nav a {
+    display: block;
+    width: 80%;
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    border: 2px solid #fa2d2d;
+    border-radius: 8px;
+    color: #fa2d2d;
+}
+
+/* Hide mobile menu on desktop */
+@media screen and (min-width: 1400px) {
+    #mobile_nav {
+        display: none;
     }
+}
 
     .menu-btn {
         display: block;
@@ -101,10 +138,10 @@
         margin-bottom: 30px;
     }
     .avatar_image{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        
     }
 
     .home-content h1 {

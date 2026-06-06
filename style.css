@@ -7,6 +7,17 @@
     outline: none;
     cursor: none;
 }
+::selection {
+    background: #ff64649a; /* yellow background */
+    color: #ffffff;      /* black text */
+    
+}
+
+/* For Firefox, use ::-moz-selection */
+::-moz-selection {
+    background: #ffcc00;
+    color: #000000;
+}
 
 html {
     scroll-behavior: smooth;
@@ -96,6 +107,7 @@ header {
     border-bottom: 1px solid #fa2d2d;
     font-family: "Audiowide", sans-serif;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 999;
 }
 
 .logo {
@@ -144,7 +156,7 @@ nav a.active {
     width: 12px;
     height: 12px;
     background: #fa2d2d;
-    border: 2px solid #00ffff;
+    border: 2px solid #fa9e9e;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
@@ -155,10 +167,10 @@ nav a.active {
         background .2s ease;
 
     box-shadow:
-        0 0 5px #00ffff,
-        0 0 10px #00ffff,
-        0 0 20px #00ffff,
-        0 0 40px #00ffff;
+        0 0 5px #fa9e9e,
+        0 0 10px #fa9e9e,
+        0 0 20px #fa9e9e,
+        0 0 40px #fa9e9e;
 }
 
 .cursor-dot.zoom {
@@ -181,7 +193,7 @@ nav a.active {
     position: absolute;
     inset: -3px;
     border-radius: inherit;
-    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #ff0000);
+    background: linear-gradient(45deg, #ffaa79, #f30000, #f1bdbd, #ff0000);
     background-size: 400%;
     z-index: -1;
     filter: blur(10px);
