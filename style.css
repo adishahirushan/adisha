@@ -28,21 +28,30 @@
     }
 }
 ::selection {
-    background: #ff64649a; /* yellow background */
-    color: #ffffff;      /* black text */
+    background: #ff64649a; 
+    color: #ffffff;
     
 }
 
 /* For Firefox, use ::-moz-selection */
 ::-moz-selection {
-    background: #ffcc00;
-    color: #000000;
+    background: #ff64649a; 
+    color: #ffffff;
 }
 
 html {
     scroll-behavior: smooth;
 }
-
+.back_gif {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 5%;
+}
 body {
     background: linear-gradient(45deg,
             rgb(0, 0, 0),
