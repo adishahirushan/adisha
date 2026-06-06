@@ -147,3 +147,50 @@ window.addEventListener("resize", () => {
 function showMobileNavHide() {
     document.getElementById("mobile_nav").classList.remove("active");
 }
+
+/* nav link active here */
+const sections = document.querySelectorAll(".page");
+const navLinks = document.querySelectorAll("#navbar a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 200;
+
+        if (window.scrollY >= sectionTop) {
+            current = section.id;
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
+
+const sections1 = document.querySelectorAll(".page");
+const navLinks1 = document.querySelectorAll("#mobile_nav a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections1.forEach(section => {
+        const sectionTop = section.offsetTop - 200;
+
+        if (window.scrollY >= sectionTop) {
+            current = section.id;
+        }
+    });
+
+    navLinks1.forEach(link => {
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
