@@ -5,7 +5,27 @@
     text-decoration: none;
     border: none;
     outline: none;
-    cursor: none;
+}
+/* Desktop / Laptop with mouse */
+@media (hover: hover) and (pointer: fine) {
+    * {
+        cursor: none;
+    }
+
+    .cursor-dot {
+        display: block;
+    }
+}
+
+/* Phones & tablets with touch */
+@media (hover: none) and (pointer: coarse) {
+    * {
+        cursor: auto;
+    }
+
+    .cursor-dot {
+        display: none;
+    }
 }
 ::selection {
     background: #ff64649a; /* yellow background */

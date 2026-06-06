@@ -8,19 +8,28 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #3d0606;
+    background: #3b0303f8;
     z-index: 99;
     opacity: 0;
     visibility: hidden;
     transform: translateX(100%);
     transition: all 0.4s ease;
-}
+    }
 
 /* When menu is opened */
 #mobile_nav.active {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
+}
+
+#mobile_nav a.active {
+    background-color: #fa2d2d;
+    color: white;
+}
+#mobile_nav a:hover {
+    background-color: #911e1e;
+    color: white;
 }
 
 #mobile_nav a {
@@ -42,7 +51,7 @@
     }
 }
 @media screen and (max-width: 1400px) {
-
+    
     .menu-btn {
         display: block;
     }
