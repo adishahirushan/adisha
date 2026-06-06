@@ -145,5 +145,7 @@ window.addEventListener("resize", () => {
 });
 
 function showMobileNavHide() {
-    mobile_nav.classList.remove("active");
+    if (window.innerWidth >= 1400) {
+        nav.classList.remove("active");
+    }
 }
