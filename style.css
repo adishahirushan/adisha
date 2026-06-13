@@ -466,3 +466,15 @@ nav a.active  {
     text-align: left;
     width: 150px;
 }
+#DATABASE:hover H3{
+    color:#f30000;
+}
+#WEB:hover H3{
+    color:#f30000;
+}
+#PROGRAMMING:hover H3{
+    color:#f30000;
+}
+#TOOLS:hover H3{
+    color:#f30000;
+}
