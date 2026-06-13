@@ -5,6 +5,7 @@
     text-decoration: none;
     border: none;
     outline: none;
+
 }
 /* Desktop / Laptop with mouse */
 @media (hover: hover) and (pointer: fine) {
@@ -50,7 +51,7 @@ html {
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-  opacity: 8%;
+  opacity: 4%;
 }
 body {
     background: linear-gradient(45deg,
@@ -179,7 +180,7 @@ nav a.active  {
     margin-top: 200px;
     padding: 100px;
     width: 100%;
-    height: 500px;
+    height: max-content;
     position: relative;
     background-color: #c72a2a67;
     border-top: 1px solid #ff000065;
@@ -367,4 +368,101 @@ nav a.active  {
     transform: scale(1.1);
     filter: blur(20px);
     transition: all 1s ease;
+}
+
+/* stacks area */
+.stack-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap:18px;
+    align-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+    justify-content: center;
+    border-bottom:1px solid #f30000 ;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.skill-card{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    width: 150px;
+    background:rgba(255,255,255,0.03);
+    border-radius:12px;
+    transition:.3s ease;
+    color: f79797;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.skill-card i{
+    font-size:1.8rem;
+    background-color: #920808;
+    border-radius:12px;
+    width: 60px;
+    padding:12px 12px;
+}
+
+.skill-card span{
+    font-size:0.95rem;
+    font-weight:500;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+    border-color:#c8ff00;
+    box-shadow:0 0 20px rgba(200,255,0,.25);
+}
+
+.skill-card:hover i{
+    transform:scale(1.15);
+}
+
+.skill-card i{
+    transition:.3s;
+}
+
+.stack_badge{
+    color: #fa2d2d;
+    background-color: #5a1111;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #fa2d2d;
+    font-size:small ;
+}
+.section-title h2{
+    margin-top: 20px;
+    color: #fa2d2d;
+    font-family: "Audiowide", sans-serif;
+}
+.section-title h2 span{
+    font-weight: bold;
+    background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
+    -webkit-background-clip: text; /* makes gradient apply to text */
+    -webkit-text-fill-color: transparent; /* hides solid color */  
+}
+
+.stack-category h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #ffffff;
+}
+.stack_inner{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+}
+.stack_inner h3{
+    text-align: left;
+    width: 150px;
 }
