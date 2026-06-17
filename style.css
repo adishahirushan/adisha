@@ -616,3 +616,31 @@ nav a.active  {
     font-size: x-large;
 
 }
+.soft_skills {
+  width: 100%;
+  justify-content: center;    
+  margin: auto;
+}
+
+.soft_skills_inner {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;            
+  justify-content: center;    
+  align-items: center;        
+  text-align: center;
+  margin: auto;
+}
+
+.soft_skills_list {
+  display: flex;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #821d1d;
+  color: white;
+  width: max-content;
+  margin: 10px;
+  font-family: "Audiowide", sans-serif;
+}
