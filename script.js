@@ -51,7 +51,7 @@ const words = [
     "3D Sculptor",
     "Video Editor",
     "VFX artist",
-    "Vedio Editer",
+    "Animator",
     "ICT & Maths Educator",
     "Graphic Designer",
     "Software Developer"
