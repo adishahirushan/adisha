@@ -123,10 +123,12 @@ html {
 .img_degree_banner_inner_text ,.img_esoft_banner_inner_text , .img_Developer_banner_inner_text ,.img_3d_banner_inner_text{
     font-size: 18px;
     color: rgb(218, 207, 207);
+    font-family: 'Poppins', sans-serif;
+
 }
 .img_degree_banner , .img_esoft_banner , .img_Developer_banner, .img_3D_banner {
-  animation: bounce 4s infinite;
-}
+    animation: bounce 4s infinite;
+    }
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -151,7 +153,7 @@ html {
 body {
     background: linear-gradient(45deg,
             rgb(0, 0, 0),
-            rgb(48, 1, 1),
+            rgb(60, 2, 2),
             rgb(0, 0, 0));
     cursor: none;
     width: 100%;
@@ -206,15 +208,26 @@ p {
 
 .btn_contact{
     padding: 10px  15px;
+    width: max-content;
     background-color: transparent;
     color:#f79797;
     border: 1px solid #fa9e9e;
     border-radius: 20px;
     font-size: larger;
     margin-right: 50px;
-   
 }
-
+.btn_contact:hover {
+    background-color: #fa9e9e;
+    color:#ff0000;
+    border: 1px solid #fa9e9e;
+}
+.home_btn_holder{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* HEADER */
 
@@ -482,7 +495,9 @@ nav a.active  {
     padding-bottom: 30px;
     padding-top: 30px;
 }
-
+.stack-grid h3{
+    transition: color 0.5s;
+}
 .skill-card{
     display:flex;
     align-items:center;
@@ -529,7 +544,9 @@ nav a.active  {
     padding: 8px;
     border-radius: 20px;
     border: 1px solid #fa2d2d;
-    font-size:small ;
+    font-size:medium ;
+    font-family: 'Poppins', sans-serif;
+
 }
 .section-title h2{
     margin-top: 20px;
@@ -563,6 +580,8 @@ nav a.active  {
     text-align: left;
     width: 150px;
 }
+
+
 #DATABASE:hover H3{
     color:#f30000;
 }
@@ -585,4 +604,15 @@ nav a.active  {
 .page.show{
     opacity: 1;
     transform: translateY(0);
+}
+
+.soft_skills .h2_in_soft_skill{
+    background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
+    -webkit-background-clip: text;   
+    -webkit-text-fill-color: transparent;
+    background-clip: text;         
+    color: transparent;     
+    font-family: "Audiowide", sans-serif;
+    font-size: x-large;
+
 }
