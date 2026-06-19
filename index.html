@@ -39,7 +39,7 @@
         <nav id="navbar">
             <a href="#Home" class="nav-link-mobile" >Home</a>
             <a href="#Stack" class="nav-link-mobile">Stack</a>
-            <a href="#Skills" class="nav-link-mobile">Skills</a>
+            <a href="#Projects" class="nav-link-mobile">Projects</a>
             <a href="#Education" class="nav-link-mobile">Education</a>
             <a href="#Experience" class="nav-link-mobile">Experience</a>
             <a href="#Contact" class="nav-link-mobile">Contact</a>
@@ -57,7 +57,7 @@
 
                 <a href="#Home" onclick="showMobileNavHide()" class="nav-link">Home</a><br>
                 <a href="#Stack" onclick="showMobileNavHide()" class="nav-link">Stack</a><br>
-                <a href="#Skills" onclick="showMobileNavHide()" class="nav-link">Skills</a><br>
+                <a href="#Projects" onclick="showMobileNavHide()" class="nav-link">Projects</a><br>
                 <a href="#Education" onclick="showMobileNavHide()" class="nav-link">Education</a><br>
                 <a href="#Experience" onclick="showMobileNavHide()" class="nav-link">Experience</a><br>
                 <a href="#Contact" onclick="showMobileNavHide()" class="nav-link">Contact</a><br>
@@ -266,6 +266,62 @@
             </div></div>
     </section>    
     <!-- end of service area-->
+
+    <!-- start Projects area-->
+
+    <section class="page" id="Projects"> 
+        <h2>FEATURED PROJECTS</h2>
+    <p>A selection of projects that showcases my skills in software development.</p>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <button class="active" onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('python')">Python</button>
+      <button onclick="filterProjects('java')">Java</button>
+      <button onclick="filterProjects('flutter')">Flutter</button>
+      <button onclick="filterProjects('web')">Web</button>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects">
+      <div class="project-card" data-category="python">
+        <h3>Personal Task Manager</h3>
+        <p>CRUD task manager with Tkinter GUI.</p>
+        <a href="#">View on GitHub</a>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <h3>Web Design & Development</h3>
+        <p>Responsive design principles and modern UI/UX.</p>
+        <a href="#">View on GitHub</a>
+      </div>
+
+      <div class="project-card" data-category="java">
+        <h3>Smart Campus API</h3>
+        <p>RESTful backend architecture with custom authentication.</p>
+        <a href="#">View on GitHub</a>
+      </div>
+
+      <div class="project-card" data-category="python">
+        <h3>Custom Network Sniffer</h3>
+        <p>Packet sniffer with Scapy and customizable dashboard.</p>
+        <a href="#">View on GitHub</a>
+      </div>
+
+      <div class="project-card" data-category="flutter">
+        <h3>Zero-Knowledge Password Vault</h3>
+        <p>Privacy-first vault with AES-256-GCM encryption.</p>
+        <a href="#">View on GitHub</a>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <h3>Civic Engagement Platform</h3>
+        <p>Collaborative platform for infrastructure reporting.</p>
+        <a href="#">View on GitHub</a>
+      </div>
+    </section>
+
+    <!-- end of Projects area-->
 
 
 

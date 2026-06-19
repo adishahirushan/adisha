@@ -214,7 +214,9 @@ p {
     border: 1px solid #fa9e9e;
     border-radius: 20px;
     font-size: larger;
+    font-weight: bolder;
     margin-right: 50px;
+    transition: background-color 0.4s;
 }
 .btn_contact:hover {
     background-color: #fa9e9e;
@@ -548,7 +550,7 @@ nav a.active  {
     font-family: 'Poppins', sans-serif;
 
 }
-.section-title h2{
+.section-title h2 {
     margin-top: 20px;
     color: #fa2d2d;
     font-family: "Audiowide", sans-serif;
@@ -644,3 +646,96 @@ nav a.active  {
   margin: 10px;
   font-family: "Audiowide", sans-serif;
 }
+
+
+.skill_container{
+    width: 100%;
+    min-height: 200px;
+    height: 200px;
+    max-height: max-content;
+
+}
+
+    /* Filter bar */
+    .filter-bar {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .filter-bar button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      background: #821d1d;
+      color: white;
+      cursor: pointer;
+      border-radius: 14px;
+      transition: background-color 0.4s;
+    }
+
+    .filter-bar button.active {
+      background: #c02121;
+    }
+    .filter-bar button:hover {
+      background: #c02121;
+    }
+
+    /* Project grid */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      width: 1200px;
+      margin: auto;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+    }
+
+    .project-card p {
+      color: #666;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #821d1d;
+      font-weight: bold;
+    }
+
+    .hidden {
+      display: none;
+    }
+    #stack{
+        margin-bottom: 50px;
+    }
+
+    #Projects h2{
+        font-weight: bold;
+        background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
+        -webkit-background-clip: text; /* makes gradient apply to text */
+        -webkit-text-fill-color: transparent; /* hides solid color */ 
+        display: block; 
+        margin: auto;
+        width: fit-content;
+        text-align: center;
+        align-items: center;
+    }
+
+    #projects p {
+        margin: auto;
+        display: block;
+        align-items: center;
+        text-align: center;
+        width: max-content;
+        padding: 8px;
+    }
