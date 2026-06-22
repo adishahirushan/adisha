@@ -718,6 +718,10 @@ nav a.active  {
     #stack{
         margin-bottom: 50px;
     }
+    #Projects{
+        width: 100%;
+        max-width: min-content;
+    }
 
     #Projects h2{
         font-weight: bold;
@@ -726,15 +730,13 @@ nav a.active  {
         -webkit-text-fill-color: transparent; /* hides solid color */ 
         display: block; 
         margin: auto;
-        width: fit-content;
+        width: min-content;
         text-align: center;
         align-items: center;
     }
 
     #projects p {
         margin: auto;
-        width: 100%;
-        max-width: min-content;
         display: block;
         align-items: center;
         text-align: center;
