@@ -746,3 +746,7 @@ nav a.active  {
     .project-card{
         width: 100%;
     }
+    .project-card p{
+        width: 100%;
+        max-width: 50px;
+    }
