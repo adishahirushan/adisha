@@ -234,11 +234,16 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 250px;
+    margin-top: calc(100vh - 675px);
     background-color: #5a1111;
     border-top: 1px solid #ff000065;
     border-bottom: 1px solid #ff000065;
 }
+
+body.scale-125 .home-img {
+    margin-top: calc(100vh - 575px);   
+}
+
 body.light-mode .home-img {
     background-color: #d12525;
     border-top: 1px solid #d12525;
@@ -326,6 +331,11 @@ nav a {
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
+}
+body.scale-125 nav a {
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 2rem;
 }
 
 body nav a:hover,
@@ -871,6 +881,7 @@ body.light-mode .soft_skills_list{
     }
     #Education{
         background-color: #b013133e;
+        padding-bottom: 80px;
     }
 
     #projects-container p {
@@ -932,6 +943,10 @@ body.light-mode .soft_skills_list{
     background:linear-gradient(#ff0000,#731313);
     box-shadow:0 0 20px #ff0000;
     z-index:0;
+}
+body.light-mode .timeline-progress{
+    background:linear-gradient(#ec8c8c,#dc7878);
+    box-shadow:0 0 20px #ed9494;
 }
 
 /* Timeline Item */
@@ -1016,6 +1031,13 @@ body.light-mode .year {
     0 0 10px #ff0000,
     0 0 20px #ff0000,
     0 0 40px #ff0000;
+}
+body.light-mode .timeline-dot{
+    background:#f58181;
+    box-shadow:
+    0 0 10px #f58181,
+    0 0 20px #f58181,
+    0 0 40px #f58181;
 }
 
 .left .timeline-dot{

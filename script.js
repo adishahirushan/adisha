@@ -312,3 +312,6 @@ window.addEventListener("load", () => {
     }
     });
 
+if (window.devicePixelRatio === 1.25) {
+  document.body.classList.add("scale-125");
+}
