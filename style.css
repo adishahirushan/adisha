@@ -334,7 +334,7 @@ body nav a.active {
 }
 body.light-mode nav a:hover,
 body.light-mode nav a.active {
-  color: #3d3d3d;
+  color: #8b3c3c;
 }
 
 
@@ -351,8 +351,9 @@ nav a.active  {
     z-index: 1002;
 }
 .Stack{
-    margin-top: 200px;
+    margin-top: 225px;
     padding: 100px;
+    padding-top: 0px;
     width: 100%;
     height: max-content;
     position: relative;
@@ -586,12 +587,20 @@ body.light-mode .name {
 
 }
 
+body.light-mode .skill-card{
+    background:rgba(255, 2, 2, 0.288);
+
+}
 .skill-card i{
     font-size:1.8rem;
     background-color: #920808;
     border-radius:12px;
     width: 60px;
     padding:12px 12px;
+}
+body.light-mode .skill-card i{
+    background:rgba(231, 32, 32, 0.881);
+
 }
 
 .skill-card span{
@@ -621,6 +630,10 @@ body.light-mode .name {
     border: 1px solid #fa2d2d;
     font-size:medium ;
     font-family: 'Poppins', sans-serif;
+}
+body.light-mode .stack_badge{
+    color: #e1e1e1;
+    background-color: #f64343;
 
 }
 .section-title h2 {
@@ -628,9 +641,18 @@ body.light-mode .name {
     color: #fa2d2d;
     font-family: "Audiowide", sans-serif;
 }
+body.light-mode .section-title h2{
+    color: white;
+}
+
 .section-title h2 span{
     font-weight: bold;
     background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
+    -webkit-background-clip: text; /* makes gradient apply to text */
+    -webkit-text-fill-color: transparent; /* hides solid color */  
+}
+body.light-mode .section-title h2 span{
+    background: linear-gradient(60deg, #bdbcbc, #eeecec, #bdbcbc, #eeecec, #bdbcbc);
     -webkit-background-clip: text; /* makes gradient apply to text */
     -webkit-text-fill-color: transparent; /* hides solid color */  
 }
@@ -691,6 +713,13 @@ body.light-mode .name {
     font-size: x-large;
 
 }
+
+body.light-mode  .h2_in_soft_skill{
+    background: linear-gradient(60deg, #bdbcbc, #eeecec, #bdbcbc, #eeecec, #bdbcbc);
+    -webkit-background-clip: text; /* makes gradient apply to text */
+    -webkit-text-fill-color: transparent; /* hides solid color */  
+}
+
 .soft_skills {
   width: 100%;
   justify-content: center;    
@@ -719,7 +748,10 @@ body.light-mode .name {
   margin: 10px;
   font-family: "Audiowide", sans-serif;
 }
+body.light-mode .soft_skills_list{
+    background-color: #ff0b0b8c;
 
+}
 
 .skill_container{
     width: 100%;
@@ -744,6 +776,10 @@ body.light-mode .name {
       cursor: pointer;
       border-radius: 14px;
       transition: background-color 0.4s;
+    }
+    body.light-mode .filter-bar button {
+        background: #f72c2c;
+
     }
 
     .filter-bar button.active {
@@ -821,6 +857,14 @@ body.light-mode .name {
         -webkit-text-fill-color: transparent; /* hides solid color */  
             
     }
+    body.light-mode #Projects-container span,
+    body.light-mode #Education .section-title
+    {
+        background: linear-gradient(60deg, #9b9b9b, #eeecec, #9b9b9b, #eeecec, #9b9b9b);
+    -webkit-background-clip: text; /* makes gradient apply to text */
+    -webkit-text-fill-color: transparent; /* hides solid color */  
+    }
+
     .section-title{
         padding-top: 100px;
         padding-bottom: 30px;
@@ -916,12 +960,15 @@ body.light-mode .name {
 
 /* Card */
 .timeline-content{
-    background:rgba(255, 255, 255, 0.05);
+    background:rgba(255, 255, 255, 0.07);
     backdrop-filter:blur(10px);
     border:1px solid rgba(255, 255, 255, 0.08);
     padding:25px;
     border-radius:20px;
     transition:.3s;
+}
+body.light-mode .timeline-content {
+    background:rgba(255, 255, 255, 0.196);
 }
 
 .timeline-content:hover{
@@ -933,6 +980,10 @@ body.light-mode .name {
     color:#ff0000;
     margin:10px 0;
 }
+body.light-mode .timeline-content h3{
+    color:rgb(139, 16, 16);
+
+}
 
 .timeline-content p{
     color:#d0d0d0b7;
@@ -940,10 +991,15 @@ body.light-mode .name {
     width: fit-content;
     max-width: max-content;
 }
-
+body.light-mode .timeline-content p{
+    color: rgba(0, 0, 0, 0.342);
+}
 .year{
     color:#ff2c4f;
     font-weight:bold;
+}
+body.light-mode .year {
+    color: rgba(157, 14, 14, 0.705);
 }
 
 /* Dots */

@@ -15,6 +15,9 @@
     transform: translateX(100%);
     transition: all 0.4s ease;
     }
+body.light-mode #mobile_nav{
+    background: #dd5c24f8;
+}
 
 /* When menu is opened */
 #mobile_nav.active {
@@ -31,6 +34,10 @@
     background-color: #911e1e;
     color: white;
 }
+body.light-mode #mobile_nav a:hover{
+    background-color: white;
+    color: #fa2d2d;
+}
 
 #mobile_nav a {
     display: block;
@@ -42,6 +49,11 @@
     border: 2px solid #fa2d2d;
     border-radius: 8px;
     color: #fa2d2d;
+    transition: background-color 0.4s;
+}
+body.light-mode #mobile_nav a{
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
 /* Hide mobile menu on desktop */

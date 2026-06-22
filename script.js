@@ -297,3 +297,18 @@ window.addEventListener("load", () => {
         toggleBtn.textContent = "Switch to Dark Mode";
     }
     });
+
+    const toggleBtn1 = document.getElementById("modeTogglemob");
+
+    toggleBtn1.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
+
+    // Change button text
+    if (document.body.classList.contains("dark-mode")) {
+        toggleBtn1.textContent = "Switch to Light Mode";
+    } else {
+        toggleBtn1.textContent = "Switch to Dark Mode";
+    }
+    });
+
