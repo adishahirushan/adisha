@@ -685,7 +685,7 @@ nav a.active  {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 20px;
-      width: 1200px;
+      max-width: max-content;
       margin: auto;
     }
 
@@ -702,6 +702,7 @@ nav a.active  {
 
     .project-card p {
       color: #666;
+      width: 90%;
     }
 
     .project-card a {
@@ -718,12 +719,11 @@ nav a.active  {
     #stack{
         margin-bottom: 50px;
     }
-    #Projects{
+    #Projects-container{
         width: 100%;
-        max-width: min-content;
     }
 
-    #Projects h2{
+    #Projects-container h2{
         font-weight: bold;
         background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
         -webkit-background-clip: text; /* makes gradient apply to text */
@@ -735,16 +735,14 @@ nav a.active  {
         
     }
 
-    #projects p {
+    #projects-container p {
         margin: auto;
         display: block;
         align-items: center;
         text-align: center;
         width: max-content;
         padding: 8px;
-    }
-
-    .project-card p{
         width: 90%;
-        padding: 5%;
     }
+    
+    
