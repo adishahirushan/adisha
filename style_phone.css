@@ -71,6 +71,7 @@ body.light-mode #mobile_nav a {
 @media screen and (max-width: 1400px) {
     .home-img {
         margin-bottom: -200px;
+        padding-bottom: 0px;
     }
     .img_3D_banner {
         display: none;
