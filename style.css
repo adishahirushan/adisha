@@ -1084,4 +1084,24 @@ body.light-mode .timeline-dot{
     .section-title{
         font-size:2rem;
     }
+        /* Background Line */
+    .timeline::before{
+        transform:width(-50%);
+    }
+
+    .timeline-item.left{
+        left:0;
+        transform:width(-100px);
+    }
+
+    .timeline-item.right{
+        left:50%;
+        transform:width(100px);
+    }
+
+    .timeline-item.show{
+        opacity:1;
+        transform:width(0);
+    }
+
 }
