@@ -647,6 +647,7 @@ body.light-mode .stack_badge{
 
 }
 .section-title h2 {
+    font-size: large;
     margin-top: 20px;
     color: #fa2d2d;
     font-family: "Audiowide", sans-serif;
