@@ -15,8 +15,9 @@
     visibility: hidden;
     transform: translateX(100%);
     transition: all 0.4s ease;
-    }
-body.light-mode #mobile_nav{
+}
+
+body.light-mode #mobile_nav {
     background: #dd5c24f8;
 }
 
@@ -31,11 +32,13 @@ body.light-mode #mobile_nav{
     background-color: #fa2d2d;
     color: white;
 }
+
 #mobile_nav a:hover {
     background-color: #911e1e;
     color: white;
 }
-body.light-mode #mobile_nav a:hover{
+
+body.light-mode #mobile_nav a:hover {
     background-color: white;
     color: #fa2d2d;
 }
@@ -52,7 +55,8 @@ body.light-mode #mobile_nav a:hover{
     color: #fa2d2d;
     transition: background-color 0.4s;
 }
-body.light-mode #mobile_nav a{
+
+body.light-mode #mobile_nav a {
     color: #ffffff;
     border: 2px solid #ffffff;
 }
@@ -63,24 +67,30 @@ body.light-mode #mobile_nav a{
         display: none;
     }
 }
+
 @media screen and (max-width: 1400px) {
-    body{
+    body {
+        margin: 0;
+        padding: 0;
         overflow-x: hidden;
     }
 
-    .img_3D_banner{
+    .img_3D_banner {
         display: none;
     }
-    .img_Developer_banner{
+
+    .img_Developer_banner {
         display: none;
     }
-    .img_esoft_banner{
+
+    .img_esoft_banner {
         display: none;
     }
-    .img_degree_banner{
+
+    .img_degree_banner {
         display: none;
     }
-    
+
     .menu-btn {
         display: block;
     }
@@ -157,6 +167,7 @@ body.light-mode #mobile_nav a{
         font-size: 1rem;
     }
 }
+
 @media (max-width: 1000px) {
 
     .home-img {
@@ -170,17 +181,19 @@ body.light-mode #mobile_nav a{
         border-top: 1px solid #ff000065;
         border-bottom: 1px solid #ff000065;
     }
+
     .avatar {
         width: 250px;
         margin-right: 25px;
         margin-left: 0px;
         margin-bottom: 30px;
     }
-    .avatar_image{
+
+    .avatar_image {
         width: 100%;
         height: auto;
         border-radius: 50%;
-        
+
     }
 
     .home-content h1 {
@@ -269,7 +282,8 @@ body.light-mode #mobile_nav a{
         margin: 10px 0;
     }
 }
-.projects{
+
+.projects {
     width: 70%;
     max-width: 1400px;
     align-items: center;
