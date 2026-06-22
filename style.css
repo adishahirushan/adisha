@@ -674,7 +674,7 @@ body.light-mode .section-title h2{
     -webkit-background-clip: text; /* makes gradient apply to text */
     -webkit-text-fill-color: transparent; /* hides solid color */  
 }
-body.light-mode .section-title h2 span{
+body.light-mode .section-title h2 {
     background: linear-gradient(60deg, #bdbcbc, #eeecec, #bdbcbc, #eeecec, #bdbcbc);
     -webkit-background-clip: text; /* makes gradient apply to text */
     -webkit-text-fill-color: transparent; /* hides solid color */  
