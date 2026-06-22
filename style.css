@@ -648,6 +648,7 @@ body.light-mode .stack_badge{
 }
 .section-title h2 {
     margin-top: 20px;
+    font-size: medium;
     font-weight: bold;
     background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
     -webkit-background-clip: text; /* makes gradient apply to text */
