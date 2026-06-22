@@ -743,9 +743,7 @@ nav a.active  {
         width: max-content;
         padding: 8px;
     }
-    .project-card{
-        width: 100%;
-    }
+
     .project-card p{
         width: 90%;
         padding: 5%;
