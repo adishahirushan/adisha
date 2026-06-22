@@ -733,6 +733,8 @@ nav a.active  {
 
     #projects p {
         margin: auto;
+        width: 100%;
+        max-width: min-content;
         display: block;
         align-items: center;
         text-align: center;
