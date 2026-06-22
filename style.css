@@ -7,6 +7,9 @@
     outline: none;
 
 }
+body{
+    background-color: #5a1111;
+}
 /* Desktop / Laptop with mouse */
 @media (hover: hover) and (pointer: fine) {
     * {
@@ -293,7 +296,7 @@ nav a.active  {
     width: 100%;
     height: max-content;
     position: relative;
-    background: radial-gradient(circle, #ff000031,#ff000049, #ff000065);
+    background: radial-gradient(circle, #ff000019,#ff00001e, #ff000036);
     border-top: 1px solid #ff000065;
     border-bottom: 1px solid #ff000065;
     
@@ -734,16 +737,26 @@ nav a.active  {
 
     }
 
-    #Projects-container h2{
+    #Projects-container span , #Education .section-title{
+        display: block;
+        margin: auto;
+        width: 500px;
+        align-items: center;
+        font-size: x-large;
+        text-align: center;
+        font-family: "Audiowide", sans-serif;
         font-weight: bold;
         background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
         -webkit-background-clip: text; /* makes gradient apply to text */
-        -webkit-text-fill-color: transparent; /* hides solid color */ 
-        display: block; 
-        margin: auto;
-        text-align: center;
-        align-items: center;
-        
+        -webkit-text-fill-color: transparent; /* hides solid color */  
+            
+    }
+    .section-title{
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    #Education{
+        background-color: #b013133e;
     }
 
     #projects-container p {
@@ -802,9 +815,9 @@ nav a.active  {
     width:4px;
     height:0;
     transform:translateX(-50%);
-    background:linear-gradient(#00f7ff,#7b2cff);
-    box-shadow:0 0 20px #00f7ff;
-    z-index:1;
+    background:linear-gradient(#ff0000,#731313);
+    box-shadow:0 0 20px #ff0000;
+    z-index:0;
 }
 
 /* Timeline Item */
@@ -833,9 +846,9 @@ nav a.active  {
 
 /* Card */
 .timeline-content{
-    background:rgba(255,255,255,0.05);
+    background:rgba(255, 255, 255, 0.05);
     backdrop-filter:blur(10px);
-    border:1px solid rgba(255,255,255,0.08);
+    border:1px solid rgba(255, 255, 255, 0.08);
     padding:25px;
     border-radius:20px;
     transition:.3s;
@@ -843,26 +856,29 @@ nav a.active  {
 
 .timeline-content:hover{
     transform:translateY(-8px);
-    box-shadow:0 0 25px rgba(0,247,255,.3);
+    box-shadow:0 0 25px rgba(255, 0, 0, 0.3);
 }
 
 .timeline-content h3{
-    color:#00f7ff;
+    color:#ff0000;
     margin:10px 0;
 }
 
 .timeline-content p{
-    color:#d0d0d0;
+    color:#d0d0d0b7;
     line-height:1.6;
+    width: fit-content;
+    max-width: max-content;
 }
 
 .year{
-    color:#7b2cff;
+    color:#ff2c4f;
     font-weight:bold;
 }
 
 /* Dots */
 .timeline-dot{
+    margin-top: 60px;
     position:absolute;
     top:35px;
     width:22px;
