@@ -1,3 +1,52 @@
+
+:root {
+  --bg-dark: linear-gradient(45deg, rgb(0,0,0), rgb(113,7,7), rgb(0,0,0));
+  --text-dark: #f5f5f5;
+  --accent-red: #dc143c; /* crimson */
+}
+:root {
+    --bg-light:linear-gradient(45deg,
+        rgba(255, 98, 0, 0.718),   /* light gray base */
+        rgba(255, 0, 0, 0.679),     /* crimson red */
+        rgba(255, 98, 0, 0.749));   /* steel blue */
+        
+    --nav-linkcolor:black;
+    --text-light: #222;
+}
+
+
+body.dark-mode {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+
+}
+
+body.light-mode {
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+button {
+    background: var(--accent-red);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button {
+  background: var(--accent-red);
+  color: white;
+}
+
+
+button:hover {
+  background: #a50d2d; /* darker red */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +56,7 @@
     outline: none;
 
 }
-body{
-    background-color: #5a1111;
-}
+
 /* Desktop / Laptop with mouse */
 @media (hover: hover) and (pointer: fine) {
     * {
@@ -192,6 +239,11 @@ p {
     border-top: 1px solid #ff000065;
     border-bottom: 1px solid #ff000065;
 }
+body.light-mode .home-img {
+    background-color: #d12525;
+    border-top: 1px solid #d12525;
+    border-bottom: 1px solid #d12525;
+}
 
 .avatar {
     width: 500px;
@@ -260,6 +312,9 @@ header {
     font-weight: 800;
     transition: 0.5s ease;
 }
+body.light-mode .logo{
+    color: white;
+}
 
 .logo:hover {
     transform: scale(1.1);
@@ -273,10 +328,15 @@ nav a {
     transition: 0.3s ease;
 }
 
-nav a:hover,
-nav a.active  {
-    color: #fa2d2d;
+body nav a:hover,
+body nav a.active {
+  color: #fa2d2d;
 }
+body.light-mode nav a:hover,
+body.light-mode nav a.active {
+  color: #3d3d3d;
+}
+
 
 nav a.active  {
     font-weight: 700;
@@ -381,6 +441,9 @@ nav a.active  {
     padding-right: 5px;
     animation: blink 0.7s infinite;
 }
+body.light-mode #typing{
+    color: #949292; 
+}
 
 .name {
     font-weight: bold;
@@ -389,6 +452,13 @@ nav a.active  {
     -webkit-text-fill-color: transparent; /* hides solid color */  
     
 }
+body.light-mode .name {
+    background: linear-gradient(60deg, #f9f9f9, #6b6b6b, #ffffff, #686868, #ffffff);
+    -webkit-background-clip: text; /* makes gradient apply to text */
+    -webkit-text-fill-color: transparent; /* hides solid color */  
+
+}
+
 
 @keyframes blink {
     50% {
