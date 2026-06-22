@@ -3,6 +3,7 @@ body {
         padding: 0;
         width: 100%;
         overflow-x: hidden;   
+        overflow-y: auto;
     }
 :root {
   --bg-dark: linear-gradient(45deg, rgb(0,0,0), rgb(113,7,7), rgb(0,0,0));
