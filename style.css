@@ -248,6 +248,7 @@ p {
     border-bottom: 1px solid #ff000065;
 }
 
+
 body.scale-125 .home-img {
     margin-top: calc(100vh - 575px);   
 }
