@@ -1,9 +1,11 @@
-timeline {
+.timeline {
         margin: 0;
         padding: 0;
         width: 100%;
         max-width: 100vw;
+        min-height: 100%;
         overflow-x: hidden;   
+        overflow-y: auto;
     }
 :root {
   --bg-dark: linear-gradient(45deg, rgb(0,0,0), rgb(113,7,7), rgb(0,0,0));
@@ -656,7 +658,7 @@ body.light-mode .stack_badge{
     margin-top: 20px;
     width: 100%;
     max-width: 100%;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
     -webkit-background-clip: text; /* makes gradient apply to text */
