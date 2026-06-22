@@ -656,7 +656,7 @@ body.light-mode .stack_badge{
     margin-top: 20px;
     width: 100%;
     max-width: 100%;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
     -webkit-background-clip: text; /* makes gradient apply to text */
