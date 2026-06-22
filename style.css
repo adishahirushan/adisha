@@ -857,8 +857,9 @@ body.light-mode .soft_skills_list{
         display: block;
         margin: auto;
         width: 500px;
+        max-width: 100%;
         align-items: center;
-        font-size: x-large;
+        font-size: large;
         text-align: center;
         font-family: "Audiowide", sans-serif;
         font-weight: bold;
