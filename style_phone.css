@@ -51,6 +51,19 @@
     }
 }
 @media screen and (max-width: 1400px) {
+
+    .img_3D_banner{
+        display: none;
+    }
+    .img_Developer_banner{
+        display: none;
+    }
+    .img_esoft_banner{
+        display: none;
+    }
+    .img_degree_banner{
+        display: none;
+    }
     
     .menu-btn {
         display: block;
@@ -239,4 +252,12 @@
         width: 100%;
         margin: 10px 0;
     }
+}
+.projects{
+    width: 70%;
+    max-width: 1400px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    display: grid;
 }
