@@ -62,16 +62,16 @@ const loader = document.getElementById("loader");
 const progressBar = document.querySelector(".progress-bar");
 const percentText = document.getElementById("loading-percent");
 
-let progress = 0;
+let progress1 = 0;
 
 const loading = setInterval(() => {
 
-    progress++;
+    progress1++;
 
-    progressBar.style.width = progress + "%";
-    percentText.innerText = progress + "%";
+    progressBar.style.width = progress1 + "%";
+    percentText.innerText = progress1 + "%";
 
-    if(progress >= 100){
+    if(progress1 >= 100){
 
         clearInterval(loading);
 
@@ -148,29 +148,33 @@ function showMobileNavHide() {
     document.getElementById("mobile_nav").classList.remove("active");
 }
 
-/* nav link active here */
 const sections = document.querySelectorAll(".page");
 const navLinks = document.querySelectorAll("#navbar a");
 
 window.addEventListener("scroll", () => {
-    let current = "";
+  let current = "";
 
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 200;
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionHeight = section.offsetHeight;
 
-        if (window.scrollY >= sectionTop) {
-            current = section.id;
-        }
-    });
+    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+      current = section.id;
+    }
+  });
 
-    navLinks.forEach(link => {
-        link.classList.remove("active");
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
 
-        if (link.getAttribute("href") === "#" + current) {
-            link.classList.add("active");
-        }
-    });
+  if (!current) {
+    document.querySelector('#navbar a[href="#Home"]').classList.add("active");
+  }
 });
+
 
 const sections1 = document.querySelectorAll(".page");
 const navLinks1 = document.querySelectorAll("#mobile_nav a");
@@ -245,3 +249,37 @@ window.addEventListener("load", () => {
         }
       });
     }
+        
+    /* Reveal Animation */
+    const items = document.querySelectorAll(".timeline-item");
+
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }
+        });
+    },{
+        threshold:0.2
+    });
+
+    items.forEach(item=>{
+        observer.observe(item);
+    });
+
+    /* Timeline Progress Line */
+    const timeline = document.querySelector(".timeline");
+    const progress = document.querySelector(".timeline-progress");
+
+    window.addEventListener("scroll",()=>{
+
+        const rect = timeline.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        let percentage =
+        ((windowHeight - rect.top) / timeline.offsetHeight) * 100;
+
+        percentage = Math.max(0, Math.min(100, percentage));
+
+        progress.style.height = percentage + "%";
+    });

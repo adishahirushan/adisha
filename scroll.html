@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education Timeline</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+
+/* SECTION */
+.timeline-section{
+    min-height:100vh;
+    padding:100px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:80px;
+    background:linear-gradient(90deg,#00f7ff,#7b2cff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* TIMELINE */
+.timeline{
+    position:relative;
+    max-width:1000px;
+    margin:auto;
+}
+
+/* Background Line */
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:50%;
+    top:0;
+    width:4px;
+    height:100%;
+    background:rgba(255,255,255,0.1);
+    transform:translateX(-50%);
+}
+
+/* Animated Progress Line */
+.timeline-progress{
+    position:absolute;
+    left:50%;
+    top:0;
+    width:4px;
+    height:0;
+    transform:translateX(-50%);
+    background:linear-gradient(#00f7ff,#7b2cff);
+    box-shadow:0 0 20px #00f7ff;
+    z-index:1;
+}
+
+/* Timeline Item */
+.timeline-item{
+    position:relative;
+    width:50%;
+    padding:20px 40px;
+    opacity:0;
+    transition:all .8s ease;
+}
+
+.timeline-item.left{
+    left:0;
+    transform:translateX(-100px);
+}
+
+.timeline-item.right{
+    left:50%;
+    transform:translateX(100px);
+}
+
+.timeline-item.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+/* Card */
+.timeline-content{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.timeline-content:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(0,247,255,.3);
+}
+
+.timeline-content h3{
+    color:#00f7ff;
+    margin:10px 0;
+}
+
+.timeline-content p{
+    color:#d0d0d0;
+    line-height:1.6;
+}
+
+.year{
+    color:#7b2cff;
+    font-weight:bold;
+}
+
+/* Dots */
+.timeline-dot{
+    position:absolute;
+    top:35px;
+    width:22px;
+    height:22px;
+    background:#00f7ff;
+    border-radius:50%;
+    z-index:5;
+    box-shadow:
+    0 0 10px #00f7ff,
+    0 0 20px #00f7ff,
+    0 0 40px #00f7ff;
+}
+
+.left .timeline-dot{
+    right:-11px;
+}
+
+.right .timeline-dot{
+    left:-11px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .timeline::before,
+    .timeline-progress{
+        left:20px;
+    }
+
+    .timeline-item{
+        width:100%;
+        left:0 !important;
+        padding-left:60px;
+        padding-right:10px;
+    }
+
+    .timeline-dot{
+        left:9px !important;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="timeline-section" id="education">
+
+    <h1 class="section-title">Education Journey</h1>
+
+    <div class="timeline">
+
+        <div class="timeline-progress"></div>
+
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span class="year">2016</span>
+                <h3>Scholarship Exam</h3>
+                <p>Successfully completed the Grade 5 Scholarship Examination and built a strong academic foundation.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span class="year">2022</span>
+                <h3>G.C.E O/L</h3>
+                <p>Completed Ordinary Level Examination with good academic performance and technical interests.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span class="year">2025</span>
+                <h3>G.C.E A/L</h3>
+                <p>Completed Advanced Level Examination in the Technology Stream and continued building software skills.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span class="year">Present</span>
+                <h3>University</h3>
+                <p>Currently pursuing higher education while developing web development and programming expertise.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+/* Reveal Animation */
+const items = document.querySelectorAll(".timeline-item");
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{
+    threshold:0.2
+});
+
+items.forEach(item=>{
+    observer.observe(item);
+});
+
+/* Timeline Progress Line */
+const timeline = document.querySelector(".timeline");
+const progress = document.querySelector(".timeline-progress");
+
+window.addEventListener("scroll",()=>{
+
+    const rect = timeline.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    let percentage =
+    ((windowHeight - rect.top) / timeline.offsetHeight) * 100;
+
+    percentage = Math.max(0, Math.min(100, percentage));
+
+    progress.style.height = percentage + "%";
+});
+
+</script>
+
+</body>
+</html>

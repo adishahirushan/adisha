@@ -26,20 +26,20 @@
         </div>
     </div>
     <!-- statt home area-->
-    <section class="home_page" id="Home">
+    
     <img src="images/space_effect.gif" class="back_gif">
     <div class="cursor-dot"></div> //custom cursor
     
     <div class="menu-overlay" id="overlay"></div>
-    
+    <section class="home_page" id="Home"></section>
+
     <header>
-        
         <a href="#" class="logo">Adisha</a>
 
         <nav id="navbar">
             <a href="#Home" class="nav-link-mobile" >Home</a>
             <a href="#Stack" class="nav-link-mobile">Stack</a>
-            <a href="#Projects" class="nav-link-mobile">Projects</a>
+            <a href="#Projects-container" class="nav-link-mobile">Projects</a>
             <a href="#Education" class="nav-link-mobile">Education</a>
             <a href="#Experience" class="nav-link-mobile">Experience</a>
             <a href="#Contact" class="nav-link-mobile">Contact</a>
@@ -57,7 +57,7 @@
 
                 <a href="#Home" onclick="showMobileNavHide()" class="nav-link">Home</a><br>
                 <a href="#Stack" onclick="showMobileNavHide()" class="nav-link">Stack</a><br>
-                <a href="#Projects" onclick="showMobileNavHide()" class="nav-link">Projects</a><br>
+                <a href="#Projects-container" onclick="showMobileNavHide()" class="nav-link">Projects</a><br>
                 <a href="#Education" onclick="showMobileNavHide()" class="nav-link">Education</a><br>
                 <a href="#Experience" onclick="showMobileNavHide()" class="nav-link">Experience</a><br>
                 <a href="#Contact" onclick="showMobileNavHide()" class="nav-link">Contact</a><br>
@@ -271,58 +271,113 @@
 
     <section class="page" id="Projects-container"> 
         <h2>FEATURED PROJECTS</h2>
-    <p>A selection of projects that showcases <br>
+        <p>A selection of projects that showcases <br>
         my skills in software development.</p>
 
-    <!-- Filter bar -->
-    <div class="filter-bar">
-      <button class="active" onclick="filterProjects('all')">All</button>
-      <button onclick="filterProjects('python')">Python</button>
-      <button onclick="filterProjects('java')">Java</button>
-      <button onclick="filterProjects('flutter')">Flutter</button>
-      <button onclick="filterProjects('web')">Web</button>
+        <!-- Filter bar -->
+        <div class="filter-bar">
+        <button class="active" onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('python')">Python</button>
+        <button onclick="filterProjects('java')">Java</button>
+        <button onclick="filterProjects('flutter')">Flutter</button>
+        <button onclick="filterProjects('web')">Web</button>
+        </div>
+
+        <!-- Projects -->
+        <div class="projects">
+        <div class="project-card" data-category="python">
+            <img src="images/project1.jpg" class="project-card-img">
+            <h3>Personal Task Manager</h3>
+            <p>CRUD task manager with Tkinter GUI.</p>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="project-card" data-category="web">
+            <img src="images/project1.jpg" class="project-card-img">
+            <h3>Web Design & Development</h3>
+            <p>Responsive design principles and modern UI/UX.</p>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="project-card" data-category="java">
+            <img src="images/project1.jpg" class="project-card-img">
+            <h3>Smart Campus API</h3>
+            <p>RESTful backend architecture with custom authentication.</p>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="project-card" data-category="python">
+            <img src="images/project1.jpg" class="project-card-img">
+            <h3>Custom Network Sniffer</h3>
+            <p>Packet sniffer with Scapy and customizable dashboard.</p>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="project-card" data-category="flutter">
+            <img src="images/project1.jpg" class="project-card-img">
+            <h3>Zero-Knowledge Password Vault</h3>
+            <p>Privacy-first vault with AES-256-GCM encryption.</p>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="project-card" data-category="web">
+            <img src="images/project1.jpg" class="project-card-img">
+            <h3>Civic Engagement Platform</h3>
+            <p>Collaborative platform for infrastructure reporting.</p>
+            <a href="#">View on GitHub</a>
+        </div>
     </div>
-
-    <!-- Projects -->
-    <div class="projects">
-      <div class="project-card" data-category="python">
-        <h3>Personal Task Manager</h3>
-        <p>CRUD task manager with Tkinter GUI.</p>
-        <a href="#">View on GitHub</a>
-      </div>
-
-      <div class="project-card" data-category="web">
-        <h3>Web Design & Development</h3>
-        <p>Responsive design principles and modern UI/UX.</p>
-        <a href="#">View on GitHub</a>
-      </div>
-
-      <div class="project-card" data-category="java">
-        <h3>Smart Campus API</h3>
-        <p>RESTful backend architecture with custom authentication.</p>
-        <a href="#">View on GitHub</a>
-      </div>
-
-      <div class="project-card" data-category="python">
-        <h3>Custom Network Sniffer</h3>
-        <p>Packet sniffer with Scapy and customizable dashboard.</p>
-        <a href="#">View on GitHub</a>
-      </div>
-
-      <div class="project-card" data-category="flutter">
-        <h3>Zero-Knowledge Password Vault</h3>
-        <p>Privacy-first vault with AES-256-GCM encryption.</p>
-        <a href="#">View on GitHub</a>
-      </div>
-
-      <div class="project-card" data-category="web">
-        <h3>Civic Engagement Platform</h3>
-        <p>Collaborative platform for infrastructure reporting.</p>
-        <a href="#">View on GitHub</a>
-      </div>
     </section>
 
     <!-- end of Projects area-->
+
+    <section class="timeline-section" id="education">
+
+        <h1 class="section-title">Education Journey</h1>
+
+        <div class="timeline">
+
+            <div class="timeline-progress"></div>
+
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="year">2016</span>
+                    <h3>Scholarship Exam</h3>
+                    <p>Successfully completed the Grade 5 Scholarship Examination and built a strong academic foundation.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="year">2022</span>
+                    <h3>G.C.E O/L</h3>
+                    <p>Completed Ordinary Level Examination with good academic performance and technical interests.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="year">2025</span>
+                    <h3>G.C.E A/L</h3>
+                    <p>Completed Advanced Level Examination in the Technology Stream and continued building software skills.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="year">Present</span>
+                    <h3>University</h3>
+                    <p>Currently pursuing higher education while developing web development and programming expertise.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 
 
 
