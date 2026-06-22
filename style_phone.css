@@ -46,7 +46,7 @@ body.light-mode #mobile_nav a:hover {
 #mobile_nav a {
     display: block;
     width: 80%;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 7px;
     text-align: center;
     font-size: 22px;
