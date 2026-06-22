@@ -647,10 +647,11 @@ body.light-mode .stack_badge{
 
 }
 .section-title h2 {
-    font-size: large;
     margin-top: 20px;
-    color: #fa2d2d;
-    font-family: "Audiowide", sans-serif;
+    font-weight: bold;
+    background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
+    -webkit-background-clip: text; /* makes gradient apply to text */
+    -webkit-text-fill-color: transparent; /* hides solid color */      font-family: "Audiowide", sans-serif;
 }
 body.light-mode .section-title h2{
     color: white;
