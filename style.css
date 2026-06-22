@@ -730,10 +730,9 @@ nav a.active  {
         -webkit-text-fill-color: transparent; /* hides solid color */ 
         display: block; 
         margin: auto;
-        width: min-content;
         text-align: center;
         align-items: center;
-
+        
     }
 
     #projects p {
@@ -743,5 +742,7 @@ nav a.active  {
         text-align: center;
         width: max-content;
         padding: 8px;
-        background-color: #00d4ff;
+    }
+    .project-card{
+        width: 100%;
     }
