@@ -1086,22 +1086,24 @@ body.light-mode .timeline-dot{
     }
         /* Background Line */
     .timeline::before{
-        transform:width(-50%);
+        transform:translateX(0%);
+        transform: widht(0%);
     }
+
 
     .timeline-item.left{
         left:0;
-        transform:width(-100px);
+        transform:translateX(0px);
     }
 
     .timeline-item.right{
         left:50%;
-        transform:width(100px);
+        transform:translateX(0);
     }
 
     .timeline-item.show{
         opacity:1;
-        transform:width(0);
+        transform:translateX(0);
     }
 
 }
