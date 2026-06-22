@@ -1,11 +1,9 @@
-body {
+timeline {
         margin: 0;
         padding: 0;
         width: 100%;
         max-width: 100vw;
-        min-height: 100%;
         overflow-x: hidden;   
-        overflow-y: auto;
     }
 :root {
   --bg-dark: linear-gradient(45deg, rgb(0,0,0), rgb(113,7,7), rgb(0,0,0));
@@ -1084,26 +1082,4 @@ body.light-mode .timeline-dot{
     .section-title{
         font-size:2rem;
     }
-        /* Background Line */
-    .timeline::before{
-        transform:translateX(0%);
-        transform: widht(0%);
-    }
-
-
-    .timeline-item.left{
-        left:0;
-        transform:translateX(0px);
-    }
-
-    .timeline-item.right{
-        left:50%;
-        transform:translateX(0);
-    }
-
-    .timeline-item.show{
-        opacity:1;
-        transform:translateX(0);
-    }
-
 }
