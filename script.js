@@ -292,9 +292,9 @@ window.addEventListener("load", () => {
 
     // Change button text
     if (document.body.classList.contains("dark-mode")) {
-        toggleBtn.textContent = "🌞";
-    } else {
         toggleBtn.textContent = "🌙";
+    } else {
+        toggleBtn.textContent = "🌞";
     }
     });
 

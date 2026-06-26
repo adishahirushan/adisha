@@ -1118,7 +1118,64 @@ body.light-mode .timeline-dot{
     transform:translateX(0);
 }
 }
+.contact_description{
+    text-align: center;
+}
+.contact_area{
+    flex:1;
+    width: max-content;
+    height: max-content;
+    padding-top: 100px;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+}
 
+.contact_social{
+    display:flex;
+    gap:15px;
+}
+
+.contact_info_box{
+    background-color: rgba(255, 0, 0, 0.367);
+    padding: 5px;
+    text-align: center;
+    width: max-content;
+    min-width: 350px;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #ffffff;
+    border:1px solid #ffffff4e;
+    transition: all 0.4s;
+    font-family: 'Poppins', sans-serif;
+
+}
+.contact_heading span{
+    background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
+    -webkit-background-clip: text; /* makes gradient apply to text */
+    -webkit-text-fill-color: transparent; /* hides solid color */     
+    font-family: "Audiowide", sans-serif;
+}
+
+.contact_info_box:hover {
+    scale: 1.05;
+    background-color: #fa2d2d8d;
+}
+.contact_tag{
+    color: #ffffff9e;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    background-color: #ff00004d;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+
+}
 
 /*=========================
         FOOTER
