@@ -480,13 +480,6 @@ body.light-mode #typing{
     -webkit-text-fill-color: transparent; /* hides solid color */  
     
 }
-body.light-mode .name {
-    background: linear-gradient(60deg, #f9f9f9, #6b6b6b, #ffffff, #686868, #ffffff);
-    -webkit-background-clip: text; /* makes gradient apply to text */
-    -webkit-text-fill-color: transparent; /* hides solid color */  
-
-}
-
 
 @keyframes blink {
     50% {
@@ -683,7 +676,8 @@ body.light-mode .section-title h2{
     -webkit-background-clip: text; /* makes gradient apply to text */
     -webkit-text-fill-color: transparent; /* hides solid color */  
 }
-body.light-mode .section-title h2 span{
+
+body.light-mode .name{
     background: linear-gradient(60deg, #bdbcbc, #eeecec, #bdbcbc, #eeecec, #bdbcbc);
     -webkit-background-clip: text; /* makes gradient apply to text */
     -webkit-text-fill-color: transparent; /* hides solid color */  
@@ -901,9 +895,11 @@ body.light-mode .soft_skills_list{
             
     }
     body.light-mode #Projects-container span,
-    body.light-mode #Education .section-title
+    body.light-mode #Education .section-title ,
+    body.light-mode #Contact .contact_heading span,
+    body.light-mode .section-title h2 span
     {
-        background: linear-gradient(60deg, #9b9b9b, #eeecec, #9b9b9b, #eeecec, #9b9b9b);
+        background: linear-gradient(60deg, #923131, #ff2609, #631717, #ff2609, #531616);
     -webkit-background-clip: text; /* makes gradient apply to text */
     -webkit-text-fill-color: transparent; /* hides solid color */  
     }
@@ -1194,9 +1190,9 @@ body.light-mode .timeline-dot{
     gap:8px;
     padding:8px 18px;
     border-radius:50px;
-    border:1px solid rgba(193,255,72,.4);
-    background:rgba(177,255,52,.08);
-    color:#d9ff58;
+    border:1px solid rgba(255, 72, 72, 0.4);
+    background:rgba(255, 52, 52, 0.08);
+    color:#ff5858;
     font-size:12px;
     letter-spacing:2px;
     font-weight:600;
@@ -1214,15 +1210,19 @@ body.light-mode .timeline-dot{
 }
 
 .section-title h2 span{
-    background:linear-gradient(90deg,#f5ff63,#ffb648);
+    background:linear-gradient(90deg,#ff6363,#ff9a48);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
 
 .section-title p{
+    margin: auto;
+    display: block;
     margin-top:18px;
     color:#9f9f9f;
     font-size:18px;
+    max-width: 90%;
+    width: max-content;
 }
 
 .cert-grid{
@@ -1237,7 +1237,7 @@ body.light-mode .timeline-dot{
 
 .cert-card{
 
-    background:#9b202071;
+    background:#92080886;
     border:1px solid rgba(160, 15, 15, 0.08);
     border-radius:22px;
     padding:25px;
@@ -1252,7 +1252,7 @@ body.light-mode .timeline-dot{
     content:"";
     position:absolute;
     inset:0;
-    background:radial-gradient(circle at top left,#c8ff6b20,transparent 60%);
+    background:radial-gradient(circle at top left,#ff6b6b20,transparent 60%);
     opacity:0;
     transition:.45s;
 
@@ -1262,16 +1262,24 @@ body.light-mode .timeline-dot{
 
     transform:translateY(-10px);
     border-color:#ffffff85;
-    box-shadow:0 15px 45px rgba(182,255,50,.15);
+    box-shadow:0 15px 45px rgba(255, 50, 50, 0.15);
 
 }
 
 .cert-card:hover::before{
-
     opacity:1;
-
 }
 
+body.light-mode .cert-card{
+    background:rgba(255, 82, 13, 0.575);
+}
+body.light-mode .cert-card p{
+    color:rgba(255, 255, 255, 0.904);
+}
+body.light-mode .section-tag{
+    color:rgba(255, 255, 255, 0.904);
+    background:rgba(255, 47, 47, 0.575);
+}
 .card-top{
 
     display:flex;
@@ -1292,18 +1300,10 @@ body.light-mode .timeline-dot{
     font-size:22px;
 
 }
+.couselogo{
 
-.linkedin{
-
-    background:#0a66c220;
-    color:#0A66C2;
-
-}
-
-.shield{
-
-    background:#a8ff3b20;
-    color:#ff6464;
+    background:#c0230e;
+    color:#fab144;
 
 }
 
@@ -1344,7 +1344,7 @@ body.light-mode .timeline-dot{
 
 .year{
 
-    color:#d9ff58;
+    color:#ff5858;
     font-weight:700;
     font-size:15px;
 
@@ -1353,8 +1353,8 @@ body.light-mode .timeline-dot{
 .btn-cert{
 
     padding:10px 18px;
-    background:#b8ff3d;
-    color:#111;
+    background:#fd020293;
+    color:#ffffff;
     text-decoration:none;
     border-radius:30px;
     font-size:14px;
@@ -1365,7 +1365,7 @@ body.light-mode .timeline-dot{
 
 .btn-cert:hover{
 
-    background:#fff;
+    background:#f07878;
     transform:scale(1.05);
 
 }
@@ -1387,11 +1387,23 @@ body.light-mode .timeline-dot{
 
 }
 
+
 @media(max-width:768px){
 
     .section-title h2{
         font-size:40px;
     }
+    #Contact{
+    width: max-content;
+    max-width: 100%;
+
+}
+#Contact p{
+    width: max-content;
+    max-width: 90vw;
+    margin: 5vw;
+    display: block;
+}
 
 }
 
