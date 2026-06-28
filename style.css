@@ -1394,7 +1394,10 @@ body.light-mode .section-tag{
 
 @media(max-width:768px){
 
-    #Contact{
+.section-title h2 span{
+    font-size: 20px;
+}
+#Contact{
     width: max-content;
     max-width: 100%;
 
