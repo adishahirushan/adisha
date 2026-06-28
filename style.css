@@ -915,6 +915,9 @@ body.light-mode .soft_skills_list{
         padding-top: 100px;
         padding-bottom: 30px;
     }
+    .section-tag{
+        margin-bottom: 50px;
+    }
     #Education{
         background-color: #b013133e;
         padding-bottom: 80px;
