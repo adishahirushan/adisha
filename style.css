@@ -664,6 +664,7 @@ body.light-mode .stack_badge{
 .section-title h2 {
     margin-top: 20px;
     width: 100%;
+    margin-bottom: -100px;
     max-width: 100%;
     font-size: large;
     font-weight: bold;
@@ -671,6 +672,7 @@ body.light-mode .stack_badge{
     -webkit-background-clip: text; /* makes gradient apply to text */
     -webkit-text-fill-color: transparent; /* hides solid color */      font-family: "Audiowide", sans-serif;
 }
+
 body.light-mode .section-title h2{
     color: white;
 }
@@ -1103,6 +1105,8 @@ body.light-mode .timeline-dot{
 
     .section-title{
         font-size:2rem;
+        margin-bottom: -100px;
+        padding-bottom: 0px;
     }
     .timeline-item.left{
     left:0;
