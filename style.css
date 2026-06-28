@@ -7,7 +7,7 @@ body{
         margin: 0;
         padding: 0;
         width: 100%;
-        max-width: 100vw;
+        max-width: 100%;
         min-height: 100%;
         overflow-x: hidden;   
         overflow-y: auto;
@@ -213,7 +213,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
   z-index: -1;
@@ -319,7 +319,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     padding: 15px 100px;
     background-color: rgba(98, 0, 255, 0.05);
     backdrop-filter: blur(10px);
@@ -1396,7 +1396,7 @@ body.light-mode .section-tag{
 
     #Contact{
     width: max-content;
-    max-width: 100vw;
+    max-width: 100%;
 
 }
 #Contact p{
