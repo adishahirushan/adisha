@@ -344,6 +344,9 @@ header {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     z-index: 999;
 }
+body.light-mode header {
+    border-bottom: 1px solid #0855fc;
+}
 
 .logo {
     font-size: 2rem;
@@ -407,6 +410,13 @@ nav a.active  {
     
 }
 
+body.light-mode .Stack{
+    background: radial-gradient(circle, #ffffff,#4cdbee93, #13a1ff);
+    border-top: 1px solid #00ccff65;
+    border-bottom: 1px solid #00ccff65;
+    
+}
+
 /* CUSTOM CURSOR */
 
 .cursor-dot {
@@ -431,6 +441,16 @@ nav a.active  {
         0 0 10px #fa9e9e,
         0 0 20px #fa9e9e,
         0 0 40px #fa9e9e;
+}
+
+body.light-mode .cursor-dot {
+    background: #5ae3f5;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow:
+        0 0 5px #fdfdfd,
+        0 0 10px #fdfdfd,
+        0 0 20px #fdfdfd,
+        0 0 40px #fdfdfd;
 }
 
 .cursor-dot.zoom {
@@ -460,6 +480,9 @@ nav a.active  {
     animation: rgbGlow 8s linear infinite;
 }
 
+body.light-mode .cursor-dot::before {
+    background: linear-gradient(45deg, #ffffff, #00e3f3, #ffffff, #00ccff);
+}
 
 
 /* OVERLAY */
@@ -669,8 +692,10 @@ body.light-mode .skill-card i{
     font-family: 'Poppins', sans-serif;
 }
 body.light-mode .stack_badge{
-    color: #e1e1e1;
-    background-color: #f64343;
+    color: #092688;
+    background-color: #43dbf6;
+    border: 1px solid rgb(45, 65, 250)
+
 
 }
 .section-title h2 {
@@ -736,6 +761,11 @@ body.light-mode .name{
 #TOOLS:hover H3{
     color:#f30000;
 }
+
+body.light-mode #TOOLS:hover H3 ,body.light-mode #PROGRAMMING:hover H3 ,body.light-mode #WEB:hover H3 ,body.light-mode #DATABASE:hover H3{
+    color:#0024f3;
+}
+
 
 .page{
     opacity: 0;
@@ -853,12 +883,18 @@ body.light-mode .soft_skills_list{
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       transition: padding 0.5s , background-color 0.5s;
     }
+    body.light-mode .project-card {
+        background-color: #009af35d;
+    }
     .project-card:hover {
       background-color: #f300005d;
       padding: 20px;
       margin: -5px;
       border-radius: 20px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    body.light-mode .project-card {
+        background-color: #14f7ff83;
     }
 
 
@@ -918,7 +954,7 @@ body.light-mode .soft_skills_list{
     body.light-mode #Contact .contact_heading span,
     body.light-mode .section-title h2 span
     {
-        background: linear-gradient(60deg, #00f7ff, #1321ee, #00f7ff, #1321ee, #00f7ff);
+        background: linear-gradient(60deg, #0a1e61, #1321ee, #0a1e61, #1321ee, #0a1e61);
     -webkit-background-clip: text; /* makes gradient apply to text */
     -webkit-text-fill-color: transparent; /* hides solid color */  
     }
