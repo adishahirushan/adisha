@@ -103,10 +103,21 @@ button:hover {
     
 }
 
+body.light-mode ::selection {
+    background: #79dff19a; 
+    color: #000000;
+    
+}
+
 /* For Firefox, use ::-moz-selection */
 ::-moz-selection {
     background: #ff64649a; 
     color: #ffffff;
+}
+body.light-mode ::-moz-selection {
+    background: #79dff19a; 
+    color: #000000;
+    
 }
 
 html {
@@ -312,10 +323,21 @@ body.light-mode .avatar {
     margin-right: 50px;
     transition: background-color 0.4s;
 }
+body.light-mode .btn_contact{
+    color:#97f1f7;
+    border: 1px solid #ffffff;
+}
+
 .btn_contact:hover {
     background-color: #fa9e9e;
     color:#ff0000;
     border: 1px solid #fa9e9e;
+}
+
+body.light-mode .btn_contact:hover {
+    background-color: #9ed8fa;
+    color:#0400ff;
+    border: 1px solid #9ec9fa;
 }
 .home_btn_holder{
     width: 100%;
@@ -355,7 +377,7 @@ body.light-mode header {
     transition: 0.5s ease;
 }
 body.light-mode .logo{
-    color: white;
+    color: rgb(0, 4, 255);
 }
 
 .logo:hover {
@@ -379,9 +401,11 @@ body nav a:hover,
 body nav a.active {
   color: #fa2d2d;
 }
+
+
 body.light-mode nav a:hover,
 body.light-mode nav a.active {
-  color: #3c888b;
+  color: #0011ff;
 }
 
 
@@ -509,8 +533,10 @@ body.light-mode .cursor-dot::before {
     padding-right: 5px;
     animation: blink 0.7s infinite;
 }
+
+
 body.light-mode #typing{
-    color: #929494; 
+    color: #1100ff; 
 }
 
 .name {
@@ -667,6 +693,9 @@ body.light-mode .skill-card i{
     font-size:0.95rem;
     font-weight:500;
 }
+body.light-mode .skill-card span {
+        color: #423fffd2;
+    }
 
 .skill-card:hover{
     transform:translateY(-5px);
@@ -825,6 +854,7 @@ body.light-mode  .h2_in_soft_skill{
 }
 body.light-mode .soft_skills_list{
     background-color: #0befff8c;
+    color: #000;
 
 }
 
@@ -892,6 +922,7 @@ body.light-mode .soft_skills_list{
       margin: -5px;
       border-radius: 20px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: all 0.4s;
     }
     body.light-mode .project-card {
         background-color: #14f7ff83;
@@ -908,10 +939,16 @@ body.light-mode .soft_skills_list{
       color: #ffffff7e;
       width: 90%;
     }
+    body.light-mode .project-card p {
+        color: #232249d2;
+    }
 
     .project-card H3 {
       color: #ff3f3fd2;
       width: 90%;
+    }
+    body.light-mode .project-card h3 {
+        color: #423fffd2;
     }
 
     .project-card a {
@@ -921,6 +958,9 @@ body.light-mode .soft_skills_list{
       color: white;
       font-weight: bold;
       
+    }
+    body.light-mode .project-card a {
+        color: #05044bd2;
     }
 
     .hidden {
@@ -935,6 +975,7 @@ body.light-mode .soft_skills_list{
         margin-bottom: 60px;
 
     }
+
 
     #Projects-container span , #Education .section-title{
         display: block;
@@ -972,7 +1013,9 @@ body.light-mode .soft_skills_list{
         background-color: #b013133e;
         padding-bottom: 80px;
     }
-
+    body.light-mode #Education{
+        background-color: #00e1ffb7;
+    }
     #projects-container p {
         margin: auto;
         display: block;
@@ -981,6 +1024,9 @@ body.light-mode .soft_skills_list{
         width: max-content;
         padding: 8px;
         width: 90%;
+    }
+    body.light-mode #Projects-container p{
+        color: #0024f3;
     }
     
     .project-card-img{
@@ -1179,6 +1225,9 @@ body.light-mode .timeline-dot{
 .contact_description{
     text-align: center;
 }
+body.light-mode .contact_description{
+    color: #0024f3;
+}
 .contact_area{
     flex:1;
     width: max-content;
@@ -1213,6 +1262,9 @@ body.light-mode .timeline-dot{
     font-family: 'Poppins', sans-serif;
 
 }
+body.light-mode .contact_info_box{
+    background-color: rgba(0, 204, 255, 0.521);
+}
 .contact_heading span{
     background: linear-gradient(60deg, #ff0000, #fc8353, #fa2d2d, #ff7b53, #ff0000);
     -webkit-background-clip: text; /* makes gradient apply to text */
@@ -1233,6 +1285,11 @@ body.light-mode .timeline-dot{
     padding: 10px;
     border-radius: 20px;
 
+}
+body.light-mode .contact_tag{
+    background-color: #00ccff4d;
+    border: 1px solid rgb(4, 0, 255);
+    color: #1201f89e;
 }
 
 .certifications{
@@ -1284,6 +1341,9 @@ body.light-mode .timeline-dot{
     font-size:18px;
     max-width: 90%;
     width: max-content;
+}
+body.light-mode .section-title p{
+    color: #001aff;
 }
 
 .cert-grid{
@@ -1368,6 +1428,11 @@ body.light-mode .section-tag{
 
 }
 
+body.light-mode .couselogo{
+    background:#0066ff;
+    color:#b3c7ff;
+}
+
 .card-content{
 
     width:100%;
@@ -1423,6 +1488,10 @@ body.light-mode .section-tag{
     transition:.35s;
 
 }
+body.light-mode .btn-cert{
+    background:#0228fd93;
+    color:#ffffff;
+}
 
 .btn-cert:hover{
 
@@ -1446,6 +1515,11 @@ body.light-mode .section-tag{
     font-weight:600;
     font-size:13px;
 
+}
+body.light-mode .ongoing {
+    background: #263aee9a; 
+    color: #91dbf1;
+    
 }
 
 
