@@ -896,7 +896,9 @@ body.light-mode .soft_skills_list{
     body.light-mode .project-card {
         background-color: #14f7ff83;
     }
-
+    body.light-mode .project-card {
+        background-color: #14f7ff83;
+    }
 
     .project-card h3 {
       margin-top: 0;
