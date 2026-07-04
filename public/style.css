@@ -482,6 +482,11 @@ body.light-mode .cursor-dot {
     height: 24px;
     background: rgba(64, 64, 65, 0.5);
 }
+body.light-mode .cursor-dot.zoom {
+    width: 24px;
+    height: 24px;
+    background: rgba(0, 174, 255, 0.473);
+}
 
 .cursor-dot.text {
     width: 2px;
