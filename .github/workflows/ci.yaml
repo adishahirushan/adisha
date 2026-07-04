@@ -21,21 +21,21 @@ jobs:
 
       - name: Verify index.html exists
         run: |
-          if [ ! -f index.html ]; then
+          if [ ! -f public/index.html ]; then
             echo "❌ index.html not found!"
             exit 1
           fi
 
       - name: Verify style.css exists
         run: |
-          if [ ! -f style.css ]; then
+          if [ ! -f public/style.css ]; then
             echo "❌ style.css not found!"
             exit 1
           fi
 
       - name: Verify script.js exists
         run: |
-          if [ ! -f script.js ]; then
+          if [ ! -f public/script.js ]; then
             echo "❌ script.js not found!"
             exit 1
           fi
