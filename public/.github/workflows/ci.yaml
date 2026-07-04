@@ -1,0 +1,41 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify index.html exists
+        run: test -f index.html
+
+      - name: Verify style.css exists
+        run: test -f style.css
+
+      - name: Verify script.js exists
+        run: test -f script.js
+
+      - name: Verify images folder exists
+        run: test -d images
+
+      - name: Verify models folder exists
+        run: test -d models || echo "No models folder found (optional)"
+
+      - name: Verify assets folder exists
+        run: test -d assets || echo "No assets folder found (optional)"
+
+      - name: Display repository contents
+        run: ls -R
+
+      - name: CI Successful
+        run: echo "✅ Portfolio validation passed!"
