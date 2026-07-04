@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -17,25 +20,28 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Verify index.html exists
-        run: test -f index.html
+        run: |
+          if [ ! -f index.html ]; then
+            echo "❌ index.html not found!"
+            exit 1
+          fi
 
       - name: Verify style.css exists
-        run: test -f style.css
+        run: |
+          if [ ! -f style.css ]; then
+            echo "❌ style.css not found!"
+            exit 1
+          fi
 
       - name: Verify script.js exists
-        run: test -f script.js
+        run: |
+          if [ ! -f script.js ]; then
+            echo "❌ script.js not found!"
+            exit 1
+          fi
 
-      - name: Verify images folder exists
-        run: test -d images
-
-      - name: Verify models folder exists
-        run: test -d models || echo "No models folder found (optional)"
-
-      - name: Verify assets folder exists
-        run: test -d assets || echo "No assets folder found (optional)"
-
-      - name: Display repository contents
+      - name: Show repository structure
         run: ls -R
 
-      - name: CI Successful
+      - name: Success
         run: echo "✅ Portfolio validation passed!"
